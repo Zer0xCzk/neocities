@@ -1,0 +1,91 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+  a {
+    color: lightgray;
+    text-decoration: none;
+  }
+  a:hover {
+    color: darkgray;
+  }
+  html {
+    background-color: #424242;
+    color: lightgray;
+    font-family: Verdana;
+    background-image: url(background.webp);
+  }
+  body {
+    display: grid; 
+    grid-template-columns: 5%;
+    grid-template-rows: 5%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4;
+  }
+  h2 {
+    display: flex;
+    justify-content: inherit;
+    margin: inherit;
+  }
+  #topbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: stretch;
+    background: url(background.webp);
+    margin: 0;
+    flex-wrap: wrap;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 20;
+  }
+  .blinkie {
+    width: 180px;
+    height: 35px;
+  }
+  .blinkbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+  .creator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 10%; 
+    background-color: #424242;
+    max-width: fit-content;
+  }
+  .work {
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    margin-top: 0;
+  }
+  #sidebar {
+    grid-row-start: 4;
+    grid-row-end: 20;
+    display: flex;
+    background-color: #424242;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    margin:4px;
+    grid-column-start: 2;
+    grid-column-end: 20;
+  }
+  @media (max-width: 800px) {
+    #stamp {
+      display: none;
+    }
+  }
