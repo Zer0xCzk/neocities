@@ -19,8 +19,8 @@
     grid-template-columns: 5%;
     grid-template-rows: 5%;
     margin: 0;
-    height: 100%;
-    width: 100%;
+    grid-auto-flow: dense;
+    white-space: preserve;
   }
   h1 {
     display: flex;
@@ -60,9 +60,11 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 16px;
-    padding: 10%; 
+    padding: 5%; 
     background-color: #424242;
     max-width: fit-content;
+    grid-column: 3;
+    justify-self: center;
   }
   .work {
     display: flex;
@@ -72,10 +74,13 @@
     margin-top: 0;
   }
   #sidebar {
-    grid-row-start: 4;
-    grid-row-end: 20;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 1;
     display: flex;
     background-color: #424242;
+    width: fit-content;
+    flex-direction: column;
   }
   #content {
     display: flex;
